@@ -81,10 +81,12 @@ header {
   display: none;
   background-color: #000;
   text-align: left;
+  z-index: 1111;
 }
 
 .dropdown-content {
   padding: 0;
+  display: absolute;
   width: 142px;
 }
 
@@ -94,4 +96,54 @@ li:hover .dropdown {
 
 .dropdown ul li {
   display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slider--width {
+  height:calc(100vh - 60px);
+  display: flex;
+  transition: all 0.5s;
+}
+
+.slider--item {
+  width: 100vw;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  
+}
+
+.slider--controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider--control {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius:50%;
+  overflow: hidden;
+  cursor: pointer;
+
 }
