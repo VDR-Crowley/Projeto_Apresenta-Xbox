@@ -51,6 +51,7 @@ header {
 .menu--navbar ul li {
   list-style: none;
   display: inline-block;
+
 }
 
 .menu--navbar li a {
@@ -67,17 +68,21 @@ header {
   text-align: right;
   margin-left: 10px;
   color: #fff;
+}
+
+.menu--navbar a:hover {
+  color: #000;
+  transition: 0.3s;
 
 }
 
 .menu--navbar li:hover {
-  color: #fff;
   background-color: #008000;
 }
 
 .dropdown {
   position: absolute;
-  max-width: 200px;
+  max-width: 190px;
   display: none;
   background-color: #000;
   text-align: left;
@@ -86,22 +91,21 @@ header {
 
 .dropdown-content {
   padding: 0;
-  display: absolute;
-  width: 142px;
 }
 
 li:hover .dropdown {
   display: block;
+  transition: 1s;
+
 }
 
 .dropdown ul li {
   display: block;
 }
 
-
-
-
-
+.dropdown--item {
+  width: 140px;
+}
 
 
 
