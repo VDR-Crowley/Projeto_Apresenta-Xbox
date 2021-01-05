@@ -55,34 +55,35 @@ header {
 }
 
 .menu--navbar li a {
+  width: 100%;
   font-size: 20px;
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  padding: 10px 5px;
   margin: 0 10px;
   text-decoration: none;
   color: #fff;
+
+  justify-self: space-between;
+  align-items: center;
 }
 
 .menu--navbar i {
-  display: inline-block;
+  display: flex;
   text-align: right;
+  margin-bottom: 5px;
   margin-left: 10px;
   color: #fff;
 }
 
 .menu--navbar a:hover {
-  color: #000;
+  color: #008000;
   transition: 0.3s;
 
 }
 
-.menu--navbar li:hover {
-  background-color: #008000;
-}
-
 .dropdown {
   position: absolute;
-  max-width: 190px;
+  max-width: 200px;
   display: none;
   background-color: #000;
   text-align: left;
@@ -100,12 +101,25 @@ li:hover .dropdown {
 }
 
 .dropdown ul li {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .dropdown--item {
-  width: 140px;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  
 }
+
+.dropdown--item a i {
+  margin-top: 5px;
+  margin-left: 20%;
+  text-align: right;
+}
+
 
 
 
@@ -150,4 +164,12 @@ li:hover .dropdown {
   overflow: hidden;
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  color: #DDD;
+  background: rgba(22, 22, 22, 0.5);
 }
