@@ -228,3 +228,55 @@ li:hover .dropdown {
 .button:hover {
   background: #003b12;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#consoles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.xbox-series--title,
+.xbox-one--title {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px 0px 0px 0px;
+  margin-left: 40px;
+}
+
+.borda{
+  width: 100px;
+  height: 10px;
+  margin: 20px 0;
+  margin-left: 40px;
+  background-color:#005b1e
+}
+
+.xbox-series--desc,
+.xbox-one--desc {
+  font-size: 30px;
+  margin: 20px; 
+  padding: 20px;
+
+}
+
+.xbox-series--body,
+.xbox-one--body {
+  line-height: 30px;
+  padding: 20px;
+  margin: 20px;  
+}
