@@ -309,3 +309,11 @@ li:hover .dropdown {
 	width:100%;
 	text-align:center;
 }
+
+#studios {
+  height: 200px;
+}
+
+footer {
+  height: 200px;
+}
