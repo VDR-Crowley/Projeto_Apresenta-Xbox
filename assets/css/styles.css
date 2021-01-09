@@ -256,6 +256,12 @@ li:hover .dropdown {
   padding: 20px;
 }
 
+.xbox-series {
+  
+}
+.xbox-one {
+
+}
 .xbox-series--title,
 .xbox-one--title {
   font-size: 50px;
@@ -318,7 +324,23 @@ li:hover .dropdown {
 }
 
 #studios {
-  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  background:#000;
+}
+
+.studios {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studios img {
+  width: 100%
 }
 
 footer {
