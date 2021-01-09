@@ -43,4 +43,4 @@ function updateMargin() {
   sliderLargura.style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 5000);
+setInterval(goNext, 8000);
