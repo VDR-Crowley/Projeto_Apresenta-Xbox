@@ -344,5 +344,50 @@ li:hover .dropdown {
 }
 
 footer {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+  background: #000;
+
+ color: #fff;
+ text-transform: uppercase;
 }
+
+footer h2 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.footer--title {
+  font-size: 30px;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer--list1 {
+  padding: 20px;
+  margin: 0 80px;
+}
+
+.footer--list2 {
+  padding: 20px;
+  margin: 0 80px;
+
+}
+.footer--list3 {
+  margin: 0 80px;
+  padding: 20px;
+}
+
+.footer--ul {
+  list-style: none;
+  line-height: 35px;
+}
+
