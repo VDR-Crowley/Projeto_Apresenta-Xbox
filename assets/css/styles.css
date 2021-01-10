@@ -7,6 +7,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,15 @@ header {
   align-items: center;
   margin: auto;
   max-width: 1240px;
+}
+
+.stickyHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  color: #000;
+  background-color: #fff;
 }
 
 .logo {

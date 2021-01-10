@@ -44,3 +44,19 @@ function updateMargin() {
 }
 
 setInterval(goNext, 8000);
+
+let header = document.querySelector('header');
+let logoImg = document.querySelector('.logo img');
+let linkMenu = document.querySelector('.menu--navbar a');
+
+window.onscroll = () => {
+  if(window.scrollY > 100) {
+    header.classList.add('stickyHeader');
+    logoImg.src = 'assets/images/logo1-removebg-preview.png';
+    linkMenu.style.color = '#000';
+  } else {
+    header.classList.remove('stickyHeader');
+    logoImg.src = 'assets/images/logo2-removebg-preview.png';
+    linkMenu.style.color = '#FFF';
+  }
+}
