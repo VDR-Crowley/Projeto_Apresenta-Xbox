@@ -406,6 +406,16 @@ footer h2 {
   line-height: 35px;
 }
 
+.footer--ul li a {
+  color: #AAA;
+  text-decoration: none;
+}
+
+.footer--ul li a:hover {
+  color: #fff;
+  transition: 0.1s;
+}
+
 
 
 
