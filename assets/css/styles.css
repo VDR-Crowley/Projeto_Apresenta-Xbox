@@ -91,9 +91,14 @@ header {
 }
 
 .menu--navbar a:hover {
-  color: #008000;
+  color: #008000 !important;
   transition: 0.1s;
 }
+/*
+.linkHover {
+  color: #008000;
+  transition: 0.1s;
+}*/
 
 .dropdown {
   position: absolute;
