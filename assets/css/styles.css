@@ -417,9 +417,104 @@ footer h2 {
 }
 
 
+.menu--hamburger {
+  display: none;
+}
 
 
 @media (min-width: 350px) and (max-width: 450px) {
   
+  header {
+    
+  }
+
+  header .container {
+    align-items: flex-start;
+  }
+
+  .logo {
+    
+  }
+
+  .menu--hamburger {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    z-index: 9999999;
+    background-color: #000;
+  }
+
+  .menu--navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu--navbar ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+  .slider--controls {
+    display: none;
+  }
+
+  .slider--title {
+    font-size: 30px;
+  }
+
+  .slider--desc {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+  }
+
+  .slider--body {
+    font-size: 20px;
+  }
+
+  .flutua {
+    top: 500px;
+  }
+
+  main {
+    width: 100%
+  }
+
+  #consoles {
+    width: 100%;
+  }
+
+  .xbox-series--title,
+  .xbox-one--title {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .borda {
+    margin-left: 20px;
+  }
+
+  .xbox-series--desc,
+  .xbox-one--desc {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .xbox-series--body,
+  .xbox-one--body {
+    padding: 0;
+  }
 }
 

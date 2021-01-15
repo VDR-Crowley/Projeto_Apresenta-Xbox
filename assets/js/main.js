@@ -47,6 +47,7 @@ let iconMenu = document.querySelectorAll('.menu--navbar i');
 
 let dropdown = document.querySelectorAll('.dropdown');
 
+// função que muda a cor das letras do menu
 function menuLetterColor() {
   for(let i = 0; i < linkMenu.length; i++) {
     linkMenu[i].style.color = '#000';
@@ -61,6 +62,7 @@ function menuLetterColor() {
 
 }
 
+// função que tras as cores do menu de volta ao normal
 function menuDefaultFontColor() {
   for(let i = 0; i < linkMenu.length; i++) {
     linkMenu[i].style.color = '#fff';
@@ -75,6 +77,8 @@ function menuDefaultFontColor() {
   }
 }
 
+
+// Evento Scroll
 window.onscroll = () => {
   if(window.scrollY > 100) {
     header.classList.add('stickyHeader');
