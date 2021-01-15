@@ -516,5 +516,25 @@ footer h2 {
   .xbox-one--body {
     padding: 0;
   }
+
+  .parallax-conteudo {
+    font-size: 20px;
+  }
+
+  #studios {
+    height: 200px;
+  }
+
+  footer {
+    height: 100vh;
+  }
+
+  footer h1 {
+    font-size: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }
 
