@@ -90,3 +90,16 @@ window.onscroll = () => {
     menuDefaultFontColor();
   }
 }
+
+
+
+let buttonMobile = document.querySelector('.menu--hamburger');
+let menu = document.querySelector('.menu');
+
+buttonMobile.addEventListener('click', () => {
+  menu.style.display = 'flex';
+});
+
+buttonMobile.addEventListener('dblclick', () => {
+  menu.style.display = 'none';
+});
