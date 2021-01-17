@@ -38,7 +38,7 @@ function updateMargin() {
   sliderLargura.style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 8000);
+//setInterval(goNext, 8000);
 
 let header = document.querySelector('header');
 let logoImg = document.querySelector('.logo img');
@@ -92,14 +92,25 @@ window.onscroll = () => {
 }
 
 
+let widthScreen = screen.innerWidth;
 
 let buttonMobile = document.querySelector('.menu--hamburger');
 let menu = document.querySelector('.menu');
+let menuUl = document.querySelector('.menu--navbar ul');
+let menuLi = document.querySelectorAll('.menu--navbar ul li');
 
-buttonMobile.addEventListener('click', () => {
-  menu.style.display = 'flex';
-});
+buttonMobile.addEventListener('click', function() {
+  let menuA = document.querySelectorAll('.menu--navbar ul li a');
 
-buttonMobile.addEventListener('dblclick', () => {
-  menu.style.display = 'none';
-});
+  if(menu.style.width != '0%') {
+    menu.style.width = '0%';
+    for(let i=0; i<menuA.length; i++) {
+      menuA[i].style.display = 'none';
+    }
+  } else {
+    menu.style.width = '80%';
+    for(let i=0; i<menuA.length; i++) {
+      menuA[i].style.display = 'flex';
+    }
+  }
+})
