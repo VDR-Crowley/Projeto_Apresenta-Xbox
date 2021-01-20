@@ -7,6 +7,15 @@ let sliderControls = document.querySelector('.slider--controls');
 
 let sliderLargura = document.querySelector('.slider--width');
 
+
+let widthScreen = screen.innerWidth;
+
+let buttonMobile = document.querySelector('.menu--hamburger');
+let menu = document.querySelector('.menu');
+let menuUl = document.querySelector('.menu--navbar ul');
+let menuLi = document.querySelectorAll('.menu--navbar ul li');
+
+let menuUlLiA = document.querySelectorAll('.menu--navbar ul li a');
 sliderLargura.style.width = `calc(100vw * ${totalSliders})`;
 
 sliderControls.style.height = `${slider.clientHeight}px`;
@@ -84,20 +93,23 @@ window.onscroll = () => {
     header.classList.add('stickyHeader');
     logoImg.src = 'assets/images/logo1-removebg-preview.png';
     menuLetterColor();
+    buttonMobile.style.color = '#000';
+    menu.style.backgroundColor = '#fff';
+    for(let i = 0; i < menuUlLiA.length; i++) {
+      menuUlLiA[i].style.borderBottom = '1px solid #000';
+    }
   } else {
     header.classList.remove('stickyHeader');
     logoImg.src = 'assets/images/logo2-removebg-preview.png';
     menuDefaultFontColor();
+    buttonMobile.style.color = '#fff';
+    menu.style.backgroundColor = '#000';
+    for(let i = 0; i < menuUlLiA.length; i++) {
+      menuUlLiA[i].style.borderBottom = '1px solid #fff';
+    }
   }
 }
 
-
-let widthScreen = screen.innerWidth;
-
-let buttonMobile = document.querySelector('.menu--hamburger');
-let menu = document.querySelector('.menu');
-let menuUl = document.querySelector('.menu--navbar ul');
-let menuLi = document.querySelectorAll('.menu--navbar ul li');
 
 buttonMobile.addEventListener('click', function() {
   let menuA = document.querySelectorAll('.menu--navbar ul li a');
