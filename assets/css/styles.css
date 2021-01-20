@@ -584,3 +584,8 @@ footer h2 {
   }
 }
 
+@media (min-width: 358px) and (max-width: 450px) {
+  footer h2 {
+    font-size: 30px;
+  }
+}
