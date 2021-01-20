@@ -526,6 +526,10 @@ footer h2 {
     top: 500px;
   }
 
+  .button {
+    margin: 15px;
+  }
+
   main {
     width: 100%
   }
@@ -568,6 +572,10 @@ footer h2 {
   }
 
   footer h1 {
+    font-size: 15px;
+  }
+
+  footer h2 {
     font-size: 20px;
   }
 
