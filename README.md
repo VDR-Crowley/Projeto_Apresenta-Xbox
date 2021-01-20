@@ -2,9 +2,9 @@
 
 Obs: Esse Projeto foi feito apenas para praticar as tecnologias<br>
 
-> HTML
-> CSS
-> Javascript
+> HTML<br>
+> CSS<br>
+> Javascript<br>
 
 
 [Visualizar Projeto](https://apresentaconsoles.netlify.app)
