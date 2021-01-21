@@ -1,21 +1,28 @@
+// variaveis usadas par ao menu mobile
+let buttonMobile = document.querySelector('.menu--hamburger');
+let menu = document.querySelector('.menu');
+let menuUl = document.querySelector('.menu--navbar ul');
+let menuLi = document.querySelectorAll('.menu--navbar ul li');
+let menuUlLiA = document.querySelectorAll('.menu--navbar ul li a');
+
+// variaveis usada no stickey head
+let header = document.querySelector('header');
+let logoImg = document.querySelector('.logo img');
+let linkMenu = document.querySelectorAll('.menu--navbar li a');
+let iconMenu = document.querySelectorAll('.menu--navbar i');
+
+let dropdown = document.querySelectorAll('.dropdown');
+
+// Variaveis usadas no slider
 let totalSliders = document.querySelectorAll('.slider--item').length;
-
 let slideAtual = 0;
-
 let slider = document.querySelector('.slider');
 let sliderControls = document.querySelector('.slider--controls');
-
 let sliderLargura = document.querySelector('.slider--width');
 
 
 let widthScreen = screen.innerWidth;
 
-let buttonMobile = document.querySelector('.menu--hamburger');
-let menu = document.querySelector('.menu');
-let menuUl = document.querySelector('.menu--navbar ul');
-let menuLi = document.querySelectorAll('.menu--navbar ul li');
-
-let menuUlLiA = document.querySelectorAll('.menu--navbar ul li a');
 sliderLargura.style.width = `calc(100vw * ${totalSliders})`;
 
 sliderControls.style.height = `${slider.clientHeight}px`;
@@ -47,14 +54,7 @@ function updateMargin() {
   sliderLargura.style.marginLeft = `-${newMargin}px`;
 }
 
-//setInterval(goNext, 8000);
-
-let header = document.querySelector('header');
-let logoImg = document.querySelector('.logo img');
-let linkMenu = document.querySelectorAll('.menu--navbar li a');
-let iconMenu = document.querySelectorAll('.menu--navbar i');
-
-let dropdown = document.querySelectorAll('.dropdown');
+setInterval(goNext, 8000);
 
 // função que muda a cor das letras do menu
 function menuLetterColor() {
@@ -110,19 +110,17 @@ window.onscroll = () => {
   }
 }
 
-
-buttonMobile.addEventListener('click', function() {
-  let menuA = document.querySelectorAll('.menu--navbar ul li a');
-
+function openMenuMobile() {
   if(menu.style.width != '0%') {
     menu.style.width = '0%';
-    for(let i=0; i<menuA.length; i++) {
-      menuA[i].style.display = 'none';
+    for(let i=0; i<menuUlLiA.length; i++) {
+      menuUlLiA[i].style.display = 'none';
     }
   } else {
     menu.style.width = '80%';
-    for(let i=0; i<menuA.length; i++) {
-      menuA[i].style.display = 'flex';
+    for(let i=0; i<menuUlLiA.length; i++) {
+      menuUlLiA[i].style.display = 'flex';
     }
   }
-})
+}
+buttonMobile.addEventListener('click', openMenuMobile);
