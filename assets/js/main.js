@@ -91,6 +91,7 @@ function menuDefaultFontColor() {
 window.onscroll = () => {
   if(window.scrollY > 100) {
     header.classList.add('stickyHeader');
+    header.style.padding = '10px';
     logoImg.src = 'assets/images/logo1-removebg-preview.png';
     menuLetterColor();
     buttonMobile.style.color = '#000';
@@ -100,6 +101,7 @@ window.onscroll = () => {
     }
   } else {
     header.classList.remove('stickyHeader');
+    header.style.padding = '5px';
     logoImg.src = 'assets/images/logo2-removebg-preview.png';
     menuDefaultFontColor();
     buttonMobile.style.color = '#fff';

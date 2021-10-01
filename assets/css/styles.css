@@ -15,8 +15,9 @@ body {
 }
 
 header {
-  height: 60px;
+  padding: 5px;
   background-color: #000;
+  transition: 0.5s;
 }
 
 .container  {
@@ -60,12 +61,13 @@ header {
   display: flex;
 }
 
-.menu--navbar ul {
-}
-
 .menu--navbar ul li {
   list-style: none;
   display: inline-block;
+}
+
+.menu--navbar li + li {
+  margin-left: 10px;
 }
 
 .menu--navbar li a {
@@ -76,7 +78,8 @@ header {
   margin: 0 10px;
   text-decoration: none;
   color: #fff;
-
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
   justify-self: space-between;
   align-items: center;
 }
